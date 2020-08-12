@@ -1,13 +1,123 @@
 
-<!doctype html>
+  <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Rad Markdown Blog Post</title>
+    <title>Eleventy Kitchen Sink</title>
   </head>
   <body>
-    <h1>My Rad Markdown Blog Post</h1>
+  <style> 
+    img { 
+      max-width: 100%; 
+      height: auto; 
+    }
+    .grid {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+    }
+    .grid div {
+      flex: 0 0 50%;
+    }
+    .grid div img {
+      width: 100%;
+    }
+  </style>
 
-  </body>
-</html>
+    <h1>About</h1>
+    <div class="grid">
+      <div> 
+        <picture>
+
+        <source type="image/webp" data-srcset="/img/4ab9d27b-320.webp 320w, /img/4ab9d27b-640.webp 640w, /img/4ab9d27b-768.webp 768w, /img/4ab9d27b-1024.webp 1024w, /img/4ab9d27b-1366.webp 1366w, /img/4ab9d27b-1600.webp 1600w, /img/4ab9d27b-1920.webp 1920w" sizes="50vw">
+  <source type="image/jpeg" data-srcset="/img/4ab9d27b-320.jpeg 320w, /img/4ab9d27b-640.jpeg 640w, /img/4ab9d27b-768.jpeg 768w, /img/4ab9d27b-1024.jpeg 1024w, /img/4ab9d27b-1366.jpeg 1366w, /img/4ab9d27b-1600.jpeg 1600w, /img/4ab9d27b-1920.jpeg 1920w" sizes="50vw">
+        <img
+          alt="A nice Image"
+          src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 423'%3e%3cdefs/%3e%3cpath fill='%23304a56' d='M0 0h300v423H0z'/%3e%3cg fill-opacity='.5' transform='translate(.8 .8) scale(1.65234)'%3e%3cellipse cx='106' cy='113' fill='%23c4c8c8' rx='77' ry='40'/%3e%3cellipse cx='44' cy='148' fill='%23ccc2af' rx='55' ry='20'/%3e%3cellipse cx='163' cy='183' fill='%231b0000' rx='43' ry='50'/%3e%3cellipse cy='239' fill='%23392307' rx='181' ry='62'/%3e%3cellipse cx='151' cy='89' fill='%239aa4a6' rx='41' ry='46'/%3e%3cellipse cx='29' cy='86' fill='%23234857' rx='94' ry='34'/%3e%3cellipse cx='100' cy='181' fill='%23a0aea4' rx='16' ry='20'/%3e%3cellipse cx='114' cy='135' fill='%23e0d1ca' rx='30' ry='16'/%3e%3cellipse cy='10' fill='%231b1717' rx='49' ry='60'/%3e%3cellipse cx='82' cy='255' fill='%23b69364' rx='21' ry='16'/%3e%3cellipse cx='64' cy='179' fill='%23815229' rx='25' ry='20'/%3e%3cellipse cx='11' cy='226' fill='%230e0e0e' rx='48' ry='33'/%3e%3cellipse cx='165' cy='62' fill='%23577179' rx='80' ry='36'/%3e%3cellipse cx='168' cy='225' fill='%23908760' rx='18' ry='8'/%3e%3cellipse cx='168' cy='119' fill='%23e2cfc3' rx='39' ry='9'/%3e%3cellipse cx='68' cy='148' fill='%23d5c3b9' rx='38' ry='8'/%3e%3cellipse cx='13' cy='145' fill='%23607875' rx='38' ry='30'/%3e%3cellipse cx='178' cy='146' fill='%23191409' rx='27' ry='18'/%3e%3cellipse cx='105' cy='206' fill='%23205a67' rx='22' ry='18'/%3e%3cellipse cx='91' cy='167' fill='%23f7e6d5' rx='8' ry='5'/%3e%3cellipse cx='123' cy='158' fill='%23291906' rx='32' ry='8'/%3e%3cellipse cx='86' fill='%23202728' rx='38' ry='22'/%3e%3cellipse cx='109' cy='111' fill='%237f909c' rx='34' ry='21'/%3e%3cellipse cx='181' cy='19' fill='%23958f75' rx='13' ry='12'/%3e%3cellipse cx='133' cy='128' fill='%23c0b9b4' rx='26' ry='13'/%3e%3cellipse cx='33' cy='81' fill='%2329434f' rx='39' ry='31'/%3e%3cellipse cx='48' cy='152' fill='%239da09c' rx='20' ry='18'/%3e%3cellipse cx='80' cy='209' fill='%23152021' rx='9' ry='34'/%3e%3cellipse cx='52' cy='20' fill='%2399907b' rx='10' ry='5'/%3e%3cellipse cx='162' cy='93' fill='%238a9699' rx='24' ry='23'/%3e%3cellipse cx='43' cy='118' fill='%23406b7e' rx='27' ry='15'/%3e%3cellipse cx='149' cy='179' fill='%231e1e19' rx='32' ry='36'/%3e%3cellipse cx='27' cy='184' fill='%233d2716' rx='22' ry='14'/%3e%3cellipse cx='170' cy='241' fill='%234b3d27' rx='75' ry='13'/%3e%3cellipse cx='64' cy='189' fill='%238f643c' rx='9' ry='16'/%3e%3cellipse cx='71' cy='166' fill='%231a1a15' rx='6' ry='8'/%3e%3cellipse cx='75' cy='71' fill='%2340616d' rx='18' ry='36'/%3e%3cellipse cx='3' cy='164' fill='%23536963' rx='43' ry='9'/%3e%3cellipse cx='135' cy='28' fill='%233e5153' rx='34' ry='31'/%3e%3cellipse cx='67' cy='255' fill='%237f6948' rx='32' ry='9'/%3e%3cellipse cx='97' cy='220' fill='%23182b2d' rx='60' ry='11'/%3e%3cellipse cx='97' cy='172' fill='%23b3aca4' rx='10' ry='7'/%3e%3cellipse cx='117' cy='176' fill='%23180d06' rx='7' ry='4'/%3e%3cellipse cx='100' cy='198' fill='%2341666a' rx='17' ry='15'/%3e%3cellipse cx='149' cy='159' fill='%23252420' rx='17' ry='21'/%3e%3cellipse cx='153' cy='127' fill='%23e0c9b9' rx='14' ry='7'/%3e%3cellipse cx='82' cy='161' fill='%237e5c36' rx='13' ry='3'/%3e%3cellipse cx='104' cy='146' fill='%23d2c4b8' rx='33' ry='5'/%3e%3cellipse cy='75' fill='%236b6a5d' rx='22' ry='5'/%3e%3cellipse cx='66' cy='233' fill='%23202a22' rx='44' ry='10'/%3e%3c/g%3e%3c/svg%3e"
+          data-src="/img/4ab9d27b-320.jpeg"
+          class="lazyload" 
+          width="300"
+          height="423"
+        />
+     
+      </picture>
+        <picture>
+
+        <source type="image/webp" data-srcset="/img/53009cb8-320.webp 320w, /img/53009cb8-640.webp 640w, /img/53009cb8-768.webp 768w, /img/53009cb8-1024.webp 1024w, /img/53009cb8-1366.webp 1366w, /img/53009cb8-1600.webp 1600w, /img/53009cb8-1920.webp 1920w" sizes="50vw">
+  <source type="image/jpeg" data-srcset="/img/53009cb8-320.jpeg 320w, /img/53009cb8-640.jpeg 640w, /img/53009cb8-768.jpeg 768w, /img/53009cb8-1024.jpeg 1024w, /img/53009cb8-1366.jpeg 1366w, /img/53009cb8-1600.jpeg 1600w, /img/53009cb8-1920.jpeg 1920w" sizes="50vw">
+        <img
+          alt="A nice Image"
+          src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 199'%3e%3cdefs/%3e%3cpath fill='%23524540' d='M0 0h300v199H0z'/%3e%3cg fill-opacity='.5' transform='translate(.6 .6) scale(1.17188)'%3e%3cellipse cx='133' cy='41' fill='%23ffffd8' rx='255' ry='65'/%3e%3cellipse cx='186' cy='38' fill='%23ffe09c' rx='255' ry='53'/%3e%3cellipse cx='225' cy='163' rx='255' ry='32'/%3e%3cellipse cx='66' cy='90' fill='%23ce884d' rx='242' ry='26'/%3e%3cellipse cx='204' cy='142' rx='20' ry='49'/%3e%3cellipse cx='196' cy='38' fill='%23ffd8a7' rx='114' ry='44'/%3e%3cellipse cx='75' cy='162' rx='255' ry='18'/%3e%3cellipse cx='99' cy='120' fill='%2371625a' rx='91' ry='25'/%3e%3cellipse cx='161' cy='72' fill='%23f2b16b' rx='255' ry='20'/%3e%3cellipse cx='58' cy='7' fill='%23ccc9c4' rx='208' ry='22'/%3e%3cellipse cy='157' rx='21' ry='28'/%3e%3cellipse cx='161' cy='102' fill='%238f725b' rx='37' ry='14'/%3e%3cellipse cx='244' cy='108' fill='%239a7a59' rx='30' ry='14'/%3e%3cellipse cx='19' cy='109' fill='%237e6b5e' rx='140' ry='15'/%3e%3cellipse cx='204' cy='107' fill='%23020000' rx='3' ry='24'/%3e%3cellipse cx='241' cy='154' fill='%23010400' rx='89' ry='22'/%3e%3cellipse cx='229' cy='34' fill='%23fbdaa6' rx='81' ry='29'/%3e%3cellipse cx='13' cy='13' fill='%23beab91' rx='32' ry='65'/%3e%3cellipse cx='77' cy='137' fill='%23463b38' rx='72' ry='10'/%3e%3cellipse cx='207' cy='126' fill='%230a0b04' rx='20' ry='19'/%3e%3cellipse cy='127' fill='%23010200' rx='4' ry='19'/%3e%3cellipse cx='236' cy='72' fill='%23ffbf73' rx='33' ry='23'/%3e%3cellipse cx='82' cy='169' fill='%23010400' rx='89' ry='15'/%3e%3cellipse cx='13' cy='71' fill='%23cba16d' rx='49' ry='22'/%3e%3cellipse cx='245' cy='102' fill='%23a6805d' rx='35' ry='9'/%3e%3cellipse cx='210' cy='12' fill='%23e5d6ba' rx='62' ry='20'/%3e%3cellipse cx='223' cy='112' fill='%23211a0a' rx='2' ry='9'/%3e%3cellipse cx='97' cy='92' fill='%23d99f66' rx='37' ry='7'/%3e%3cellipse cx='194' cy='55' fill='%23facb8b' rx='104' ry='11'/%3e%3cellipse cx='118' cy='104' fill='%23947860' rx='80' ry='9'/%3e%3cellipse cx='248' cy='121' fill='%236c5641' rx='30' ry='10'/%3e%3cellipse cx='208' cy='123' fill='%23030100' rx='2' ry='35'/%3e%3cellipse cx='64' cy='40' fill='%23d9bd9a' rx='49' ry='20'/%3e%3cellipse cx='154' cy='130' fill='%235c4b42' rx='27' ry='12'/%3e%3cellipse cx='14' cy='121' fill='%23584c48' rx='12' ry='16'/%3e%3cellipse cx='21' cy='103' fill='%237e6b5b' rx='35' ry='11'/%3e%3cellipse cx='83' cy='62' fill='%23e3b881' rx='55' ry='15'/%3e%3cellipse cx='11' fill='%23bbbbaf' rx='72' ry='19'/%3e%3cellipse cx='244' cy='91' fill='%23e7a35f' rx='39' ry='5'/%3e%3cellipse cx='217' cy='111' fill='%23937f69' rx='3' ry='5'/%3e%3cellipse cx='135' cy='147' fill='%23211b13' rx='44' ry='6'/%3e%3cellipse cx='206' cy='94' fill='%23ba8869' rx='2' ry='3'/%3e%3cellipse cx='11' cy='164' fill='%230b0a03' rx='9' ry='27'/%3e%3cellipse cx='204' cy='88' fill='%23451800' rx='1' ry='12'/%3e%3cellipse cx='212' cy='96' fill='%23c9986a' rx='3' ry='8'/%3e%3cellipse cx='150' cy='30' fill='%23e8cfa8' rx='51' ry='12'/%3e%3cellipse cx='24' cy='85' fill='%23cc9963' rx='60' ry='9'/%3e%3cellipse cx='222' cy='134' fill='%230f0d06' rx='2' ry='27'/%3e%3cellipse cx='71' cy='23' fill='%23d1c2a9' rx='50' ry='14'/%3e%3cellipse cx='30' cy='111' fill='%23705f57' rx='48' ry='6'/%3e%3c/g%3e%3c/svg%3e"
+          data-src="/img/53009cb8-320.jpeg"
+          class="lazyload" 
+          width="300"
+          height="200"
+        />
+     
+      </picture>
+        <picture>
+
+        <source type="image/webp" data-srcset="/img/b61f79c2-320.webp 320w, /img/b61f79c2-640.webp 640w, /img/b61f79c2-768.webp 768w, /img/b61f79c2-1024.webp 1024w, /img/b61f79c2-1366.webp 1366w, /img/b61f79c2-1600.webp 1600w, /img/b61f79c2-1920.webp 1920w" sizes="50vw">
+  <source type="image/jpeg" data-srcset="/img/b61f79c2-320.jpeg 320w, /img/b61f79c2-640.jpeg 640w, /img/b61f79c2-768.jpeg 768w, /img/b61f79c2-1024.jpeg 1024w, /img/b61f79c2-1366.jpeg 1366w, /img/b61f79c2-1600.jpeg 1600w, /img/b61f79c2-1920.jpeg 1920w" sizes="50vw">
+        <img
+          alt="A nice Image"
+          src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 299 449'%3e%3cdefs/%3e%3cpath fill='%23343c6c' d='M0 0h299v449H0z'/%3e%3cg fill-opacity='.5' transform='translate(.9 .9) scale(1.7539)'%3e%3cellipse cx='83' cy='105' rx='170' ry='123'/%3e%3cellipse cx='99' cy='243' fill='%2300ffe5' rx='162' ry='19'/%3e%3cellipse cx='84' cy='137' fill='%2300ebdc' rx='18' ry='61'/%3e%3cellipse cx='92' cy='41' rx='170' ry='48'/%3e%3cellipse cx='30' cy='155' rx='44' ry='73'/%3e%3cellipse cx='148' cy='139' rx='55' ry='88'/%3e%3cellipse cx='85' cy='111' fill='%2300c3c0' rx='21' ry='29'/%3e%3cellipse cx='18' cy='97' rx='49' ry='131'/%3e%3cellipse cx='148' cy='103' rx='49' ry='123'/%3e%3cellipse cx='86' cy='211' fill='aqua' rx='4' ry='21'/%3e%3cellipse cx='57' cy='243' fill='%2300d0ab' rx='170' ry='18'/%3e%3cellipse cx='77' cy='32' rx='170' ry='52'/%3e%3cellipse cx='99' cy='124' fill='%23016677' rx='14' ry='29'/%3e%3cellipse cx='45' cy='195' rx='33' ry='32'/%3e%3cellipse cx='112' cy='191' fill='%23000200' rx='25' ry='36'/%3e%3cellipse cx='81' cy='168' fill='%2300cfce' rx='6' ry='34'/%3e%3cellipse cx='101' cy='240' fill='%2300687a' rx='58' ry='5'/%3e%3cellipse cx='45' cy='147' rx='31' ry='28'/%3e%3cellipse cx='72' cy='116' fill='%2302f9ef' rx='7' ry='16'/%3e%3cellipse cx='155' cy='134' rx='47' ry='92'/%3e%3cellipse cx='74' cy='169' fill='%2303ffff' rx='4' ry='9'/%3e%3cellipse cx='91' cy='172' fill='%2300617b' rx='9' ry='27'/%3e%3cellipse cx='27' cy='83' rx='40' ry='142'/%3e%3cellipse cx='3' cy='214' fill='%23000200' rx='79' ry='13'/%3e%3cellipse cx='111' cy='225' fill='%23005656' rx='106' ry='2'/%3e%3cellipse cx='88' cy='34' rx='170' ry='49'/%3e%3cellipse cx='110' cy='233' fill='%2300debf' rx='20' ry='8'/%3e%3cellipse cy='255' fill='%2300d5c1' rx='119' ry='15'/%3e%3cellipse cx='100' cy='116' fill='%23046c7e' rx='15' ry='9'/%3e%3cellipse cx='79' cy='98' fill='%2302d5cb' rx='9' ry='14'/%3e%3cellipse cx='84' cy='198' fill='%2302bbbc' rx='5' ry='18'/%3e%3cellipse cx='120' cy='216' rx='30' ry='9'/%3e%3cellipse cx='82' cy='149' fill='%2302cac2' rx='8' ry='11'/%3e%3cellipse cx='47' cy='98' rx='22' ry='23'/%3e%3cellipse cx='47' cy='141' rx='30' ry='14'/%3e%3cellipse cx='99' cy='142' fill='%23027e8c' rx='11' ry='6'/%3e%3cellipse cx='86' cy='219' fill='%2303e2eb' rx='3' ry='10'/%3e%3cellipse cx='89' cy='205' fill='%23045f6e' rx='2' ry='49'/%3e%3cellipse cx='67' cy='210' fill='%23000101' rx='14' ry='16'/%3e%3cellipse cx='126' cy='131' rx='24' ry='10'/%3e%3cellipse cx='77' cy='171' fill='%2304b8b7' rx='8' ry='10'/%3e%3cellipse cx='77' cy='238' fill='%2301355c' rx='6' ry='5'/%3e%3cellipse cx='151' cy='232' fill='%2300c6aa' rx='21' ry='8'/%3e%3cellipse cx='135' cy='100' rx='32' ry='14'/%3e%3cellipse cx='8' cy='245' fill='%2300d0bb' rx='34' ry='17'/%3e%3cellipse cx='96' cy='163' fill='%2303253d' rx='5' ry='16'/%3e%3cellipse cx='163' cy='206' fill='%23000507' rx='75' ry='19'/%3e%3cellipse cx='104' cy='64' rx='21' ry='27'/%3e%3cellipse cx='92' cy='103' fill='%23018888' rx='10' ry='17'/%3e%3cellipse cx='98' cy='243' fill='%23044d67' rx='11' ry='3'/%3e%3c/g%3e%3c/svg%3e"
+          data-src="/img/b61f79c2-320.jpeg"
+          class="lazyload" 
+          width="300"
+          height="449"
+        />
+     
+      </picture>
+      </div>
+      <div>
+        <picture>
+
+        <source type="image/webp" data-srcset="/img/40d7e43e-320.webp 320w, /img/40d7e43e-640.webp 640w, /img/40d7e43e-768.webp 768w, /img/40d7e43e-1024.webp 1024w, /img/40d7e43e-1366.webp 1366w, /img/40d7e43e-1600.webp 1600w, /img/40d7e43e-1920.webp 1920w" sizes="50vw">
+  <source type="image/jpeg" data-srcset="/img/40d7e43e-320.jpeg 320w, /img/40d7e43e-640.jpeg 640w, /img/40d7e43e-768.jpeg 768w, /img/40d7e43e-1024.jpeg 1024w, /img/40d7e43e-1366.jpeg 1366w, /img/40d7e43e-1600.jpeg 1600w, /img/40d7e43e-1920.jpeg 1920w" sizes="50vw">
+        <img
+          alt="A nice Image"
+          src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 299 467'%3e%3cdefs/%3e%3cpath fill='%23396235' d='M0 0h299v467H0z'/%3e%3cg fill-opacity='.5' transform='translate(1 1) scale(1.82422)'%3e%3cellipse cx='133' cy='26' fill='white' rx='141' ry='73'/%3e%3cellipse cx='101' cy='24' fill='%23fffaff' rx='163' ry='31'/%3e%3cellipse cx='34' cy='65' fill='%23000015' rx='150' ry='11'/%3e%3cellipse cx='148' cy='86' fill='%23caf2ff' rx='103' ry='13'/%3e%3cellipse cx='37' cy='73' fill='%2353460a' rx='43' ry='16'/%3e%3cellipse cx='65' cy='23' fill='%23d8d6ff' rx='162' ry='31'/%3e%3cellipse cx='54' cy='94' fill='white' rx='16' ry='5'/%3e%3cellipse cx='11' cy='179' fill='%23062617' rx='65' ry='29'/%3e%3cellipse cx='87' cy='115' fill='%2328401e' rx='46' ry='22'/%3e%3cellipse cy='239' fill='%23001007' rx='38' ry='17'/%3e%3cellipse cx='134' cy='64' fill='%23003980' rx='97' ry='9'/%3e%3cellipse cx='158' cy='40' fill='white' rx='43' ry='20'/%3e%3cellipse cx='45' cy='144' fill='%236c9376' rx='12' ry='25'/%3e%3cellipse cx='103' cy='143' fill='%23b3be67' rx='13' ry='11'/%3e%3cellipse cx='126' cy='5' fill='%2388d8ff' rx='38' ry='20'/%3e%3cellipse cx='93' cy='243' fill='%23849b4a' rx='18' ry='26'/%3e%3cellipse cx='47' cy='14' fill='%23ffa9d0' rx='27' ry='23'/%3e%3cellipse cx='102' cy='200' fill='%23001d09' rx='13' ry='23'/%3e%3cellipse cx='129' cy='160' fill='%23000b0a' rx='10' ry='22'/%3e%3cellipse cx='148' cy='87' fill='%23c7efff' rx='60' ry='13'/%3e%3cellipse cx='20' cy='66' fill='%239c660c' rx='16' ry='14'/%3e%3cellipse cx='41' cy='225' fill='%23b1c563' rx='17' ry='7'/%3e%3cellipse fill='%2365c5ff' rx='19' ry='35'/%3e%3cellipse cx='148' cy='107' fill='%23000e1a' rx='27' ry='9'/%3e%3cellipse cx='49' cy='81' fill='%23274832' rx='35' ry='5'/%3e%3cellipse cx='67' cy='185' fill='%23000405' rx='28' ry='8'/%3e%3cellipse cx='62' cy='201' fill='%2380a255' rx='30' ry='6'/%3e%3cellipse cx='77' cy='212' fill='%23041c0d' rx='47' ry='6'/%3e%3cellipse cx='44' cy='255' fill='%2395ad5f' rx='22' ry='11'/%3e%3cellipse cx='100' cy='156' rx='6' ry='11'/%3e%3ccircle cx='82' cy='165' r='15' fill='%237c9b48'/%3e%3cellipse cx='50' cy='58' fill='%231e1f56' rx='13' ry='7'/%3e%3cellipse cx='149' cy='235' fill='%230d3122' rx='39' ry='13'/%3e%3cellipse cx='163' cy='141' fill='%2300070f' rx='15' ry='13'/%3e%3cellipse cx='77' cy='142' fill='%23000914' rx='15' ry='10'/%3e%3cellipse cx='144' cy='206' fill='%236b8e70' rx='15' ry='14'/%3e%3cellipse cx='147' cy='157' fill='%2388af79' rx='8' ry='13'/%3e%3cellipse cx='52' cy='92' fill='%23ffe6ff' rx='11' ry='4'/%3e%3cellipse cx='96' cy='77' fill='%23e0f5ff' rx='18' ry='4'/%3e%3cellipse cx='18' cy='128' fill='%236b8f51' rx='15' ry='16'/%3e%3cellipse cx='121' cy='184' fill='%23c9e19c' rx='7' ry='4'/%3e%3cellipse cx='117' cy='85' fill='%23001300' rx='4' ry='2'/%3e%3cellipse cx='48' cy='118' fill='%23000f07' rx='27' ry='4'/%3e%3cellipse cx='22' cy='162' fill='%23001e12' rx='15' ry='18'/%3e%3cellipse cx='83' cy='100' fill='%23364f20' rx='35' ry='6'/%3e%3cellipse cx='94' cy='20' fill='%239ddeff' rx='24' ry='12'/%3e%3cellipse cx='112' cy='156' fill='%23b4c861' rx='4' ry='13'/%3e%3cellipse cx='109' cy='58' fill='%23003297' rx='27' ry='4'/%3e%3cellipse cx='71' cy='52' fill='%23eafbff' rx='11' ry='5'/%3e%3cellipse cx='106' cy='44' fill='%23f5ffff' rx='32' ry='10'/%3e%3c/g%3e%3c/svg%3e"
+          data-src="/img/40d7e43e-320.jpeg"
+          class="lazyload" 
+          width="300"
+          height="467"
+        />
+     
+      </picture>
+        <picture>
+
+        <source type="image/webp" data-srcset="/img/813a6bbc.webp 300w" sizes="50vw">
+  <source type="image/jpeg" data-srcset="/img/813a6bbc.jpeg 300w" sizes="50vw">
+        <img
+          alt="A nice Image"
+          src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3e%3cdefs/%3e%3cpath fill='%232f4159' d='M0 0h300v300H0z'/%3e%3cg fill-opacity='.5' transform='translate(.6 .6) scale(1.17188)'%3e%3cellipse cx='89' fill='%23fcffff' rx='179' ry='163'/%3e%3cellipse cx='157' cy='171' fill='%23686d65' rx='124' ry='112'/%3e%3cellipse cx='40' cy='55' fill='white' rx='68' ry='31'/%3e%3cellipse cx='243' cy='32' fill='%23f4faff' rx='148' ry='38'/%3e%3cellipse cx='180' cy='107' fill='%23082a5c' rx='40' ry='41'/%3e%3cellipse cx='232' cy='191' fill='%237f8a8f' rx='105' ry='55'/%3e%3cellipse cx='129' cy='62' fill='%23000017' rx='12' ry='21'/%3e%3cellipse cx='53' cy='239' fill='%230b0900' rx='67' ry='17'/%3e%3cellipse cx='132' cy='222' rx='50' ry='10'/%3e%3cellipse cx='34' cy='67' fill='%23fbfbff' rx='52' ry='33'/%3e%3cellipse cx='25' cy='6' fill='%235293ea' rx='108' ry='28'/%3e%3cellipse cx='9' cy='176' fill='%23543e00' rx='61' ry='25'/%3e%3cellipse cx='70' cy='154' fill='%23d8dee0' rx='22' ry='18'/%3e%3cellipse cx='128' cy='182' fill='%23cea331' rx='59' ry='9'/%3e%3cellipse cx='130' cy='79' fill='%232c3d5b' rx='39' ry='21'/%3e%3cellipse cx='255' cy='96' fill='%237c8286' rx='68' ry='25'/%3e%3cellipse cx='187' cy='18' fill='white' rx='43' ry='17'/%3e%3cellipse cx='28' cy='116' fill='%234f6170' rx='43' ry='15'/%3e%3cellipse cx='183' cy='207' fill='%23221716' rx='24' ry='13'/%3e%3cellipse cx='147' cy='155' fill='%2337586f' rx='50' ry='24'/%3e%3cellipse cx='95' cy='40' fill='%23fffeff' rx='32' ry='17'/%3e%3cellipse cx='66' cy='217' fill='%23b39488' rx='20' ry='14'/%3e%3cellipse cx='44' cy='143' fill='%23d5e9ff' rx='23' ry='11'/%3e%3cellipse cx='93' cy='209' fill='%23000002' rx='11' ry='26'/%3e%3cellipse cx='203' cy='45' fill='%235880bf' rx='40' ry='7'/%3e%3cellipse cx='219' cy='149' fill='%23a1c4d6' rx='60' ry='5'/%3e%3cellipse cx='243' cy='70' fill='%23fdfbff' rx='33' ry='5'/%3e%3cellipse cx='241' cy='210' fill='%23909eb5' rx='30' ry='18'/%3e%3cellipse cx='255' cy='85' fill='%232b384d' rx='48' ry='10'/%3e%3cellipse cx='153' cy='195' fill='%23b0957b' rx='32' ry='17'/%3e%3cellipse cy='222' fill='%23dec8bf' rx='12' ry='8'/%3e%3cellipse cx='134' cy='105' fill='%23a5a197' rx='12' ry='36'/%3e%3cellipse cx='249' cy='21' fill='%236d85b8' rx='11' ry='22'/%3e%3cellipse cx='192' cy='126' fill='%231a385b' rx='45' ry='18'/%3e%3cellipse cx='91' cy='173' fill='%23c09d45' rx='27' ry='8'/%3e%3ccircle cx='239' cy='105' r='10' fill='%23d3c7c3'/%3e%3cellipse cx='179' cy='249' fill='%234e6b88' rx='92' ry='15'/%3e%3cellipse cx='114' cy='212' fill='%23ecd7d0' rx='8' ry='6'/%3e%3cellipse cx='131' cy='53' fill='%23000a2d' rx='9' ry='12'/%3e%3cellipse cx='141' cy='30' fill='white' rx='30' ry='10'/%3e%3cellipse cx='204' cy='198' fill='%23201414' rx='15' ry='9'/%3e%3cellipse cy='160' fill='%23665b24' rx='33' ry='19'/%3e%3cellipse cx='72' cy='5' fill='%23ebebf7' rx='13' ry='8'/%3e%3cellipse cx='49' cy='181' fill='%23242714' rx='10' ry='24'/%3e%3cellipse cx='228' cy='67' fill='%23ededfa' rx='11' ry='12'/%3e%3cellipse cx='66' cy='191' fill='%23d5ac73' rx='11' ry='6'/%3e%3cellipse cx='6' cy='30' fill='%238aaad3' rx='80' ry='12'/%3e%3cellipse cx='32' cy='255' fill='%23000d01' rx='52' ry='13'/%3e%3cellipse cx='163' cy='163' fill='%232a4c69' rx='27' ry='16'/%3e%3cellipse cx='170' cy='198' fill='%23515055' rx='37' ry='4'/%3e%3c/g%3e%3c/svg%3e"
+          data-src="/img/813a6bbc.jpeg"
+          class="lazyload" 
+          width="300"
+          height="300"
+        />
+     
+      </picture>
+        <picture>
+
+        <source type="image/webp" data-srcset="/img/8b1c59f9-320.webp 320w, /img/8b1c59f9-640.webp 640w, /img/8b1c59f9-768.webp 768w, /img/8b1c59f9-1024.webp 1024w, /img/8b1c59f9-1366.webp 1366w, /img/8b1c59f9-1600.webp 1600w, /img/8b1c59f9-1920.webp 1920w" sizes="50vw">
+  <source type="image/jpeg" data-srcset="/img/8b1c59f9-320.jpeg 320w, /img/8b1c59f9-640.jpeg 640w, /img/8b1c59f9-768.jpeg 768w, /img/8b1c59f9-1024.jpeg 1024w, /img/8b1c59f9-1366.jpeg 1366w, /img/8b1c59f9-1600.jpeg 1600w, /img/8b1c59f9-1920.jpeg 1920w" sizes="50vw">
+        <img
+          alt="A nice Image"
+          src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 199'%3e%3cdefs/%3e%3cpath fill='%23654336' d='M0 0h300v199H0z'/%3e%3cg fill-opacity='.5' transform='translate(.6 .6) scale(1.17188)'%3e%3cellipse cx='39' cy='8' fill='white' rx='133' ry='158'/%3e%3cellipse cx='56' fill='white' rx='200' ry='37'/%3e%3cellipse cx='160' cy='62' fill='%23542610' rx='53' ry='34'/%3e%3cellipse cx='255' cy='138' fill='%23000a0b' rx='83' ry='113'/%3e%3cellipse cx='21' cy='26' fill='%23fff9ea' rx='67' ry='93'/%3e%3cellipse cx='107' cy='169' fill='%233e3e3f' rx='86' ry='56'/%3e%3cellipse cx='103' cy='3' fill='white' rx='155' ry='16'/%3e%3cellipse cx='130' cy='115' fill='%23a27c6f' rx='35' ry='29'/%3e%3cellipse cx='179' cy='167' fill='%23090d09' rx='105' ry='24'/%3e%3cellipse cx='169' cy='64' fill='%236e4837' rx='40' ry='38'/%3e%3cellipse cx='77' cy='76' fill='%23bfa29c' rx='50' ry='30'/%3e%3cellipse cx='122' cy='53' fill='%23774027' rx='37' ry='10'/%3e%3cellipse cx='71' cy='131' fill='%239c9398' rx='70' ry='13'/%3e%3cellipse cx='34' cy='19' fill='%23fffce5' rx='98' ry='29'/%3e%3cellipse cx='200' cy='22' fill='%23ad6f4f' rx='44' ry='8'/%3e%3cellipse cx='90' cy='80' fill='%23dcd0cf' rx='36' ry='7'/%3e%3cellipse cx='123' cy='111' fill='%23775c4f' rx='27' ry='10'/%3e%3cellipse cx='167' cy='69' fill='%23654233' rx='38' ry='27'/%3e%3cellipse cx='27' cy='146' fill='%23888488' rx='64' ry='22'/%3e%3cellipse cx='159' cy='97' fill='%23c18f80' rx='14' ry='8'/%3e%3cellipse cx='35' cy='146' fill='%23140a05' rx='11' ry='4'/%3e%3cellipse cx='190' cy='3' fill='%23fffbeb' rx='67' ry='11'/%3e%3cellipse cx='132' cy='89' fill='%23362017' rx='13' ry='5'/%3e%3cellipse cx='55' cy='100' fill='%23afabb5' rx='22' ry='34'/%3e%3cellipse cx='126' cy='30' fill='%23f8bb8d' rx='30' ry='6'/%3e%3cellipse cx='43' cy='70' fill='%239e7564' rx='25' ry='4'/%3e%3cellipse cx='11' cy='130' fill='%234a3d3a' rx='11' ry='5'/%3e%3cellipse cx='125' cy='131' fill='%23d6beb3' rx='10' ry='9'/%3e%3cellipse cx='98' cy='58' fill='%238b5945' rx='32' ry='4'/%3e%3cellipse cx='124' cy='42' fill='%23a96440' rx='25' ry='7'/%3e%3cellipse cx='219' cy='58' fill='%232a221e' rx='23' ry='30'/%3e%3cellipse cx='167' cy='150' fill='%23201b13' rx='31' ry='18'/%3e%3cellipse cx='1' cy='158' fill='%23e4cabe' rx='20' ry='6'/%3e%3cellipse cy='99' fill='%23d6c9c6' rx='42' ry='29'/%3e%3cellipse cx='109' cy='65' fill='%23ddbdaf' rx='21' ry='5'/%3e%3cellipse cx='97' cy='118' fill='%23443027' rx='10' ry='8'/%3e%3ccircle cx='89' cy='39' r='12' fill='%23ffd4a9'/%3e%3cellipse cx='244' cy='18' fill='%238a695a' rx='47' ry='6'/%3e%3cellipse cx='61' cy='142' fill='%235f575a' rx='14' ry='12'/%3e%3cellipse cx='159' cy='20' fill='%23ffd5b0' rx='29' ry='8'/%3e%3cellipse cx='190' cy='76' fill='%23865339' rx='7' ry='30'/%3e%3cellipse cx='116' cy='123' fill='%23aa9b98' rx='9' ry='15'/%3e%3cellipse cx='102' cy='98' fill='%23c2babb' rx='59' ry='4'/%3e%3cellipse cx='57' cy='158' fill='%23b0acae' rx='20' ry='4'/%3e%3cellipse cx='126' cy='72' fill='%23623624' rx='31' ry='2'/%3e%3cellipse cx='111' cy='105' fill='%23473a34' rx='10' ry='5'/%3e%3cellipse cx='30' cy='137' fill='%23b1b6bf' rx='18' ry='6'/%3e%3cellipse cx='200' cy='28' fill='%2361453c' rx='18' ry='5'/%3e%3cellipse cx='153' cy='70' fill='%234c3328' rx='9' ry='23'/%3e%3cellipse cx='18' cy='12' fill='%23fff7ed' rx='99' ry='30'/%3e%3c/g%3e%3c/svg%3e"
+          data-src="/img/8b1c59f9-320.jpeg"
+          class="lazyload" 
+          width="300"
+          height="200"
+        />
+     
+      </picture>
+      </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" type="text/javascript"></script>
+    </body>
+    </html>
+  

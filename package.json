@@ -13,6 +13,11 @@
     "@11ty/eleventy": "^0.11.0"
   },
   "dependencies": {
-    "axios": "^0.19.2"
+    "@11ty/eleventy-img": "^0.3.0",
+    "axios": "^0.19.2",
+    "sqip": "^1.0.0-alpha.32",
+    "sqip-plugin-data-uri": "^1.0.0-alpha.33",
+    "sqip-plugin-primitive": "^1.0.0-alpha.34",
+    "sqip-plugin-svgo": "^1.0.0-alpha.33"
   }
 }
